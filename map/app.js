@@ -153,8 +153,23 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         strokeWeight: 1
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
+	  findMarkers( circle );
       return google.maps.event.addListener(circle, 'click', circleDrawHandler);
     };
+	
+	function findMarkers( circle ){
+		var msg = "";
+		markers.forEach(function (m){
+			if (google.maps.geometry.spherical.computeDistanceBetween(m.getPosition(), circle.getCenter()) <= circle.getRadius()) {
+				msg += m.getTitle()+' => is in your search area';
+			} else {
+				// msg += m.getName()+'=> is NOT in circle');
+			}
+			msg +="\n";
+		});
+		alert(msg);
+	}
+	
     google.maps.event.addListener(map, 'click', circleDrawHandler);
     searchInput = document.getElementById('searchInput');
     $(searchInput.form).on({
