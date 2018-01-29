@@ -153,12 +153,11 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         strokeWeight: 1
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
-      return google.maps.event.addListener(circle, 'click', circleDrawHandler);
+      return circle ; //google.maps.event.addListener(circle, 'click', circleDrawHandler);
     };
 	
 	drawAndSearch = function(e) {
-		circleDrawHandler(e);
-		findMarkers( circle );
+		findMarkers( circleDrawHandler(e) );
 	}
 	
 	function findMarkers( circle ){
