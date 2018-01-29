@@ -153,9 +153,13 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         strokeWeight: 1
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
-	  findMarkers( circle );
       return google.maps.event.addListener(circle, 'click', circleDrawHandler);
     };
+	
+	drawAndSearch = function(e) {
+		circleDrawHandler(e);
+		findMarkers( circle );
+	}
 	
 	function findMarkers( circle ){
 		var msg = "";
