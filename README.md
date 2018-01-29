@@ -14,8 +14,7 @@ Features
 - map tools (distance to event, events near me, etc)
 
 What am I NOT building in?
-- Authentication/Authorization: While it would be great to assume that everyone is using oAuth or something similar, we just can't make that jump. Access to sensitive forms and utilities is determined via nonce. A nonce is a one time only Globially Unique Identifer (GUID) token. 
-- Exeption to the rule. There will be authN/authZ around the admin screen. But that will be kept to the absolute minimum necessary. 
+- Too much in the way of security. The UserSpice baseline gives us some generic security and I'll provide some info on using oAuth. Beyond that you're kinda on your own. I'm happy to help you get something working but EVERYBODY does things differently on that front. 
 
 Someday I'll get around to building integration examples for various auth/auth systems. First, functionality. 
 
