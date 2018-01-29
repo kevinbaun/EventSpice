@@ -1,4 +1,4 @@
-# Event-Manager
+# EventSpice
 
 The event manager is an open source attempt to unify the collection methods and data presentation of events within the Society of Creative Anachronism (SCA). This application is in no way associated with SCA corporate or any particular Kingdom within the SCA. 
 
