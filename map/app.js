@@ -152,17 +152,18 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         strokeOpacity: 0.62,
         strokeWeight: 1
       });
+	  
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
-      alert('returning the circle');
+	  
       return circle ; //google.maps.event.addListener(circle, 'click', circleDrawHandler);
     };
 	
 	drawAndSearch = function(e) {
-		findMarkers( circleDrawHandler(e) );
+		c = circleDrawHandler(e);
+		findMarkers(c);
 	}
 	
-	function findMarkers( circle ){
-		alert('looking for markers');
+	findMarkers = function( circle ){
 		var msg = "";
 		markers.forEach(function (m){
 			if (google.maps.geometry.spherical.computeDistanceBetween(m.getPosition(), circle.getCenter()) <= circle.getRadius()) {
@@ -175,7 +176,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 		alert(msg);
 	}
 	
-    google.maps.event.addListener(map, 'click', circleDrawHandler);
+    google.maps.event.addListener(map, 'click', drawAndSearch);
     searchInput = document.getElementById('searchInput');
     $(searchInput.form).on({
       submit: function() {
