@@ -8,3 +8,5 @@
 - create basic (minimal) event widget using the json service
 - create full (detailed) event widget using the json service
 - create event approavl forms
+
+- LASTLY rebrand the UI
