@@ -153,6 +153,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         strokeWeight: 1
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
+      alert('returning the circle');
       return circle ; //google.maps.event.addListener(circle, 'click', circleDrawHandler);
     };
 	
@@ -161,6 +162,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 	}
 	
 	function findMarkers( circle ){
+		alert('looking for markers');
 		var msg = "";
 		markers.forEach(function (m){
 			if (google.maps.geometry.spherical.computeDistanceBetween(m.getPosition(), circle.getCenter()) <= circle.getRadius()) {
