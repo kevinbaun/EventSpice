@@ -1,4 +1,5 @@
 - rebuild the event submission form (public access)
+ - need to investigate some nice widgets (calendar, etc) for these
 - create the DB schema
 - add DB schema to the install db setup scripts (install\includes\sql.sql)
 - create admin screen
