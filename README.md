@@ -2,6 +2,10 @@
 
 The event manager is an open source attempt to unify the collection methods and data presentation of events within the Society of Creative Anachronism (SCA). This application is in no way associated with SCA corporate or any particular Kingdom within the SCA. 
 
+DEMO SITE: https://eventspice.houseblueheron.com/ 
+... you will get an SSL warning. I know. It's expected. Just ignore it for now. 
+
+
 GOALS
 - clean, consistent, easy to use system
 - environment agnostic
@@ -28,4 +32,4 @@ Although I despise Debian, I have decided to use the bitnami LAMP image for this
 
 Licensed under the 'Please give me credit as the designer and developer' code. Feel free to hack it up any way that works for you. 
 
-This system uses (UserSpice) https://userspice.com/ because I'm lazy.
+This system uses (UserSpice) https://userspice.com/ because I'm lazy and it's kind of awesome.
