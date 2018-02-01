@@ -17,12 +17,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-// error_reporting(E_ALL);
+error_reporting(E_ALL);
 // ini_set('display_errors', 1);
-ini_set("allow_url_fopen", 1);
+// ini_set("allow_url_fopen", 1);
 if(isset($_SESSION)){session_destroy();}
 ?>
 <?php require_once 'init.php';?>
+
 <?php require_once $abs_us_root.$us_url_root.'users/includes/header.php'; ?>
 <?php require_once $abs_us_root.$us_url_root.'users/includes/navigation.php';
 use PragmaRX\Google2FA\Google2FA;
