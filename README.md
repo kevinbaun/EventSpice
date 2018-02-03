@@ -18,7 +18,7 @@ Features
 - map tools (distance to event, events near me, etc)
 
 What am I NOT building in?
-- Too much in the way of security. The UserSpice baseline gives us some generic security and I'll provide some info on using oAuth. Beyond that you're kinda on your own. I'm happy to help you get something working but EVERYBODY does things differently on that front. 
+- Too much in the way of security. The UserSpice baseline gives us some generic security and I'll provide some info on using oAuth. Beyond that you're kinda on your own. I'm happy to help you get something working but EVERYBODY does things differently on that front, so I am not focus on that at this time. 
 
 Someday I'll get around to building integration examples for various auth/auth systems. First, functionality. 
 
