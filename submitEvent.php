@@ -248,6 +248,7 @@ UNDER DEVELOPMENT</b><br>
 @todo: if user is logged in, tie this event to their account so they can look it up later in their dashboard.
 </pre>
 </p><hr>
+<!--
 EVENT INFORMATION<br>
 <hr>
 </center>
@@ -507,7 +508,7 @@ EVENT INFORMATION<br>
 		<td><textarea name="other" cols="40" rows="6" wrap="ON"></textarea></td>
 	</tr>
 </tbody></table>
-<input type="checkbox" name="perm" value="YES">By checking this box, I affirm that I have obtained permission from each person listed in this annoucement to publish their personal information electronically. <!--<A HREF="javascript:popUp('priv.htm')">Click here for a full description of the privacy Policy</A>.-->
+<input type="checkbox" name="perm" value="YES">By checking this box, I affirm that I have obtained permission from each person listed in this annoucement to publish their personal information electronically. 
 <br><br>
 <center>
 <input type="button" value="Send Event Flyer" onclick="ValidateData();">
@@ -515,7 +516,7 @@ EVENT INFORMATION<br>
 
 
 </center></form>
-
+-->
 </div> <!-- /container -->
 
 </div> <!-- /#page-wrapper -->
